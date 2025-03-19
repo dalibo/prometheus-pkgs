@@ -5,7 +5,7 @@
 name: "prometheus"
 arch: "amd64"
 platform: "linux"
-version: "v2.54.1"
+version: "v3.2.1"
 section: "database"
 priority: "optional"
 replaces:
