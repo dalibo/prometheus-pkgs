@@ -13,7 +13,7 @@ jobs:
     needs: build-packages-workflow
     steps:
     - name: Download Prometheus Artifacts
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         name: packages
 
