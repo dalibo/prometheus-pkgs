@@ -13,7 +13,7 @@ jobs:
       options: --cpus 1
     steps:
     - name: Download Prometheus Artifacts
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         name: packages
 
@@ -54,7 +54,7 @@ jobs:
       options: --cpus 1
     steps:
       - name: Download Prometheus Artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: packages
 

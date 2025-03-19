@@ -12,7 +12,7 @@ jobs:
       - name: Copy nfpm confs
         run: sudo cp nfpm/* _build/
       - name: Archive Prometheus Artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: prometheus-artifacts
           path: _build
@@ -21,7 +21,7 @@ jobs:
     needs: build-artifacts
     steps:
       - name: Download Prometheus Artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: prometheus-artifacts
 
@@ -62,7 +62,7 @@ jobs:
           args: package --config postgres_exporter.yaml -p rpm
 
       - name: Archive Prometheus Package
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: packages
           path: |
