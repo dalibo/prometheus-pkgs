@@ -5,7 +5,7 @@
 name: "prometheus-node-exporter"
 arch: "amd64"
 platform: "linux"
-version: "1.9.0"
+version: "1.12.1"
 section: "database"
 priority: "optional"
 replaces:

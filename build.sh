@@ -44,7 +44,7 @@ build_postgres_exporter() {
 
 build_node_exporter() {
   # node_exporter version
-  VERSION="1.9.0"
+  VERSION="1.12.1"
   wget https://github.com/prometheus/node_exporter/releases/download/v${VERSION}/node_exporter-${VERSION}.linux-amd64.tar.gz -O _build/node_exporter-${VERSION}.tar.gz -c
 
   mkdir -p _build/node_exporter
