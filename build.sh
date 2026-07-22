@@ -16,7 +16,7 @@ build_prometheus() {
 
 build_alertmanager() {
   # alertmanager version
-  VERSION="0.28.1"
+  VERSION="0.33.1"
   wget https://github.com/prometheus/alertmanager/releases/download/v${VERSION}/alertmanager-${VERSION}.linux-amd64.tar.gz -O _build/alertmanager-${VERSION}.tar.gz -c
 
   mkdir -p _build/alertmanager
