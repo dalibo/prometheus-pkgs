@@ -2,7 +2,7 @@
 
 build_prometheus() {
   # Prometheus version
-  VERSION="3.2.1"
+  VERSION="3.13.1"
   wget https://github.com/prometheus/prometheus/releases/download/v${VERSION}/prometheus-${VERSION}.linux-amd64.tar.gz -O _build/prometheus-${VERSION}.tar.gz -c
 
   mkdir -p _build/prometheus
