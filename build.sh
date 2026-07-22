@@ -30,7 +30,7 @@ build_alertmanager() {
 
 build_postgres_exporter() {
   # postgres_exporter version
-  VERSION="0.17.1"
+  VERSION="0.20.1"
   wget https://github.com/prometheus-community/postgres_exporter/releases/download/v${VERSION}/postgres_exporter-${VERSION}.linux-amd64.tar.gz -O _build/postgres_exporter-${VERSION}.tar.gz -c
 
   mkdir -p _build/postgres_exporter
